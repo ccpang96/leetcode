@@ -59,3 +59,6 @@ int slidingWindowTemplate(string s) {
 [76.最小覆盖子串](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%97%AE%E9%A2%98/76.%20%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.cpp)
 </br>
 [567.字符串的排列](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%97%AE%E9%A2%98/567.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97.cpp)
+
+</br>
+[992. K 个不同整数的子数组](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%97%AE%E9%A2%98/992.%20K%20%E4%B8%AA%E4%B8%8D%E5%90%8C%E6%95%B4%E6%95%B0%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.cpp)
