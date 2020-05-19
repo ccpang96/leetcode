@@ -84,17 +84,17 @@ vector<int> findAnagrams(string s, string p) {
 
 
 
-int main() {
-
-	// ≤‚ ‘ [5/18/2020 Administrator]
-	string s1 = "cbaebabacd";
-	string s2 = "abc";
-	vector<int> result = findAnagrams(s1, s2);
-	for (auto &m : result)
-		cout << m << ",";
-	cout << endl;
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	// ≤‚ ‘ [5/18/2020 Administrator]
+//	string s1 = "cbaebabacd";
+//	string s2 = "abc";
+//	vector<int> result = findAnagrams(s1, s2);
+//	for (auto &m : result)
+//		cout << m << ",";
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//}
 
 /************************ (C) COPYRIGHT ccpang *****END OF FILE****/
