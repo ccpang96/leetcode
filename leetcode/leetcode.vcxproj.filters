@@ -18,7 +18,7 @@
     <ClCompile Include="滑动窗口问题\76. 最小覆盖子串.cpp">
       <Filter>滑动窗口问题</Filter>
     </ClCompile>
-    <ClCompile Include="567.字符串的排列.cpp">
+    <ClCompile Include="滑动窗口问题\567.字符串的排列.cpp">
       <Filter>滑动窗口问题</Filter>
     </ClCompile>
   </ItemGroup>
