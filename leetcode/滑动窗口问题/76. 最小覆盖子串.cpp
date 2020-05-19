@@ -59,7 +59,7 @@ string minWindow(string s, string t) {
 			count--;
 
 
-		while (l < r && hash[s[l]] < 0) { //
+		while (l < r && hash[s[l]] < 0) { //将那些减为-1的元素再加上来
 			hash[s[l]]++; 
 			l++;		//左移窗口
 		}
