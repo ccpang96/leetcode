@@ -75,8 +75,4 @@ string minWindow(string s, string t) {
 }
 
 
-int main() {
-
-	system("pause");
-	return 0;
-}
+ 
