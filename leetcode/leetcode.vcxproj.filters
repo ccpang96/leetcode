@@ -4,6 +4,9 @@
     <Filter Include="滑动窗口问题">
       <UniqueIdentifier>{545b3251-8643-4cfb-a2e4-ad93d2fcea40}</UniqueIdentifier>
     </Filter>
+    <Filter Include="搜索问题">
+      <UniqueIdentifier>{4f75fd83-d763-4309-9632-99f092e3da1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="滑动窗口问题\sliding_window_template.c">
@@ -23,6 +26,15 @@
     </ClCompile>
     <ClCompile Include="滑动窗口问题\992. K 个不同整数的子数组.cpp">
       <Filter>滑动窗口问题</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索问题\DFSTemplate.cpp">
+      <Filter>搜索问题</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索问题\BFSTemplate.cpp">
+      <Filter>搜索问题</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索问题\695. 岛屿的最大面积.cpp">
+      <Filter>搜索问题</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
