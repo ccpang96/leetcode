@@ -78,11 +78,11 @@ int subarraysWithKDistinct(vector<int>& A, int K) {
  
 
 
-int main() {
-
-	vector<int> A = { 1,2,1,2,3 };
-	int result =  subarraysWithKDistinct(A, 2);
-	cout << result << endl;
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	vector<int> A = { 1,2,1,2,3 };
+//	int result =  subarraysWithKDistinct(A, 2);
+//	cout << result << endl;
+//	system("pause");
+//	return 0;
+//}

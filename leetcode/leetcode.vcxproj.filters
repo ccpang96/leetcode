@@ -36,5 +36,8 @@
     <ClCompile Include="搜索问题\695. 岛屿的最大面积.cpp">
       <Filter>搜索问题</Filter>
     </ClCompile>
+    <ClCompile Include="搜索问题\200.岛屿数量.cpp">
+      <Filter>搜索问题</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

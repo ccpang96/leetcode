@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="搜索问题\200.岛屿数量.cpp" />
     <ClCompile Include="搜索问题\695. 岛屿的最大面积.cpp" />
     <ClCompile Include="搜索问题\BFSTemplate.cpp" />
     <ClCompile Include="搜索问题\DFSTemplate.cpp" />
@@ -87,6 +88,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
