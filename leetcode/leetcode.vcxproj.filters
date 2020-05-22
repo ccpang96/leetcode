@@ -7,6 +7,9 @@
     <Filter Include="搜索问题">
       <UniqueIdentifier>{4f75fd83-d763-4309-9632-99f092e3da1f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="并查集">
+      <UniqueIdentifier>{952accc8-9248-4228-b375-9d4197660074}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="滑动窗口问题\sliding_window_template.c">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="搜索问题\200.岛屿数量.cpp">
       <Filter>搜索问题</Filter>
+    </ClCompile>
+    <ClCompile Include="并查集\547.朋友圈.cpp">
+      <Filter>并查集</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
