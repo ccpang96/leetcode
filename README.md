@@ -1,4 +1,4 @@
-# 滑动窗口问题
+# 一、滑动窗口问题
 
 - 思路：
 
@@ -61,3 +61,42 @@ int slidingWindowTemplate(string s) {
 [567.字符串的排列](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%97%AE%E9%A2%98/567.%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97.cpp)
 </br>
 [992. K 个不同整数的子数组](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%97%AE%E9%A2%98/992.%20K%20%E4%B8%AA%E4%B8%8D%E5%90%8C%E6%95%B4%E6%95%B0%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.cpp)
+
+# 二、搜索问题
+- 思路：1.函数调用方式实现的DFS；2.使用栈实现的DFS；3.使用队列实现的BFS
+
+- 模板1 :
+```
+class Solution_695_dfs {
+	int dfs(vector<vector<int>> &grid, int cur_i, int cur_j) {
+		//递归基:搜索到的点是0，或者达到边界，退回，重新探索其他方向 
+		//这个地方一定要先判断边界，否则判断是否为土地会越界grid[cur_i][cur_j]
+		if (cur_i < 0 || cur_j < 0 || cur_i == grid.size() || cur_j == grid[0].size() || grid[cur_i][cur_j] != 1)
+			return 0;
+		grid[cur_i][cur_j] = 0; //每个网格只被探索一次
+
+								//往右走，往左走，往下走，往上走
+		int di[4] = { 0,0,1,-1 };
+		int dj[4] = { 1,-1,0,0 };
+		int ans = 1;
+		//遍历当前土地的四个方向
+		for (int index = 0; index != 4; ++index) {
+			int next_i = cur_i + di[index], next_j = cur_j + dj[index];
+			ans += dfs(grid, next_i, next_j);
+		}
+		return ans;
+	}
+
+public:
+	int maxAreaOfIsland(vector<vector<int>>& grid) {
+		int ans = 0;
+		for (int i = 0; i < grid.size(); ++i) {
+			for (int j = 0; j < grid[0].size(); ++j)
+				ans = std::max(ans, dfs(grid, i, j));
+		}
+		return ans;
+	}
+};
+```
+- 例题 </br>
+[200.岛屿数量](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%90%9C%E7%B4%A2%E9%97%AE%E9%A2%98/200.%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F.cpp) </br>
