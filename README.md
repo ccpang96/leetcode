@@ -100,3 +100,45 @@ public:
 ```
 - 例题 </br>
 [200.岛屿数量](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%90%9C%E7%B4%A2%E9%97%AE%E9%A2%98/200.%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F.cpp) </br>
+
+# 三、并查集
+- 思路：Union-find算法
+
+- 模板：
+```
+class Solution {
+public:
+	//vector<int>fa;		//父亲节点'
+	int fa[200];
+	int find(int x) {
+		return fa[x] == x ? x : fa[x] = find(fa[x]);		//路径压缩
+	}
+
+
+	int findCircleNum(vector<vector<int>>& M) {
+
+		int N = M.size();
+		//初始化父节点
+		for (int i = 0; i < N; i++)
+			fa[i] = i;
+
+		int res = N;		//初始化有N个圈子：谁跟谁都不是朋友
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < i; j++) {
+				if (M[i][j] == 0) continue;
+
+				//节点合并 union
+				int fx = find(i), fy = find(j);
+				if (fx != fy) {
+					fa[fx] = fy;
+					res--;
+				}
+			}
+		}
+		return res;
+	}
+};
+```
+
+- 例题：</br>
+[547.朋友圈](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E5%B9%B6%E6%9F%A5%E9%9B%86/547.%E6%9C%8B%E5%8F%8B%E5%9C%88.cpp)
