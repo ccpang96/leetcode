@@ -48,5 +48,8 @@
     <ClCompile Include="并查集\130. 被围绕的区域.cpp">
       <Filter>搜索问题</Filter>
     </ClCompile>
+    <ClCompile Include="搜索问题\417. 太平洋大西洋水流问题.cpp">
+      <Filter>搜索问题</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
