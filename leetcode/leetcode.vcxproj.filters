@@ -10,6 +10,12 @@
     <Filter Include="并查集">
       <UniqueIdentifier>{952accc8-9248-4228-b375-9d4197660074}</UniqueIdentifier>
     </Filter>
+    <Filter Include="搜索问题\回溯问题">
+      <UniqueIdentifier>{07184db8-171c-4208-8619-d5d0b41b114b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="字典树">
+      <UniqueIdentifier>{87d8dfe5-7542-49ec-ad67-625e3c5df6d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="滑动窗口问题\sliding_window_template.c">
@@ -50,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="搜索问题\417. 太平洋大西洋水流问题.cpp">
       <Filter>搜索问题</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索问题\回溯问题\BacktrackingTemplate.cpp">
+      <Filter>搜索问题\回溯问题</Filter>
+    </ClCompile>
+    <ClCompile Include="字典树\trieTemplate.cpp">
+      <Filter>字典树</Filter>
+    </ClCompile>
+    <ClCompile Include="字典树\211. 添加与搜索单词 - 数据结构设计.cpp">
+      <Filter>字典树</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

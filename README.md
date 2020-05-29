@@ -101,6 +101,9 @@ public:
 ```
 - 例题 </br>
 [200.岛屿数量](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%90%9C%E7%B4%A2%E9%97%AE%E9%A2%98/200.%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F.cpp) </br>
+[695. 岛屿的最大面积](https://github.com/ccpang96/leetcode/blob/master/leetcode/%E6%90%9C%E7%B4%A2%E9%97%AE%E9%A2%98/695.%20%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF.cpp)</br>
+[130. 被围绕的区域:  这一题是对边界上的进行DFS]()
+
 ---
 # 三、并查集
 - 思路：Union-find算法
