@@ -16,6 +16,12 @@
     <Filter Include="字典树">
       <UniqueIdentifier>{87d8dfe5-7542-49ec-ad67-625e3c5df6d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="树">
+      <UniqueIdentifier>{d692c220-8970-4249-a7f6-ac68ddcb8e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="树\递归">
+      <UniqueIdentifier>{fc4cbfaa-0c3c-44c8-ab6e-f61f179639f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="滑动窗口问题\sliding_window_template.c">
@@ -65,6 +71,12 @@
     </ClCompile>
     <ClCompile Include="字典树\211. 添加与搜索单词 - 数据结构设计.cpp">
       <Filter>字典树</Filter>
+    </ClCompile>
+    <ClCompile Include="字典树\212. 单词搜索 II.cpp">
+      <Filter>字典树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\104. 二叉树的最大深度.cpp">
+      <Filter>树\递归</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

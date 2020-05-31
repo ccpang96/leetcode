@@ -21,7 +21,7 @@ using namespace std;
 
 
 
-//函数调用dfs实现
+//dfs实现:递归版本
 class Solution_695_dfs {
 	int dfs(vector<vector<int>> &grid, int cur_i, int cur_j) {
 		//递归基:搜索到的点是0，或者达到边界，退回，重新探索其他方向 
