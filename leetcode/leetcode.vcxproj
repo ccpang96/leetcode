@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="82.删除排序链表中的重复元素(只返回不重复的).cpp" />
     <ClCompile Include="字典树\211. 添加与搜索单词 - 数据结构设计.cpp" />
     <ClCompile Include="字典树\212. 单词搜索 II.cpp" />
     <ClCompile Include="字典树\trieTemplate.cpp" />
@@ -30,13 +31,48 @@
     <ClCompile Include="搜索问题\BFSTemplate.cpp" />
     <ClCompile Include="搜索问题\DFSTemplate.cpp" />
     <ClCompile Include="搜索问题\回溯问题\BacktrackingTemplate.cpp" />
-    <ClCompile Include="树\递归\104. 二叉树的最大深度.cpp" />
+    <ClCompile Include="树\二叉搜索树\1.修剪二叉树-hard.cpp" />
+    <ClCompile Include="树\二叉搜索树\10. 二叉搜索树中的众数.cpp" />
+    <ClCompile Include="树\二叉搜索树\2. 寻找二叉查找树的第 k 个元素.cpp" />
+    <ClCompile Include="树\二叉搜索树\3. 把二叉查找树每个节点的值都加上比它大的节点的值.cpp" />
+    <ClCompile Include="树\二叉搜索树\4.二叉查找树的最近公共祖先.cpp" />
+    <ClCompile Include="树\二叉搜索树\6.从有序数组中构造二叉查找树.cpp" />
+    <ClCompile Include="树\二叉搜索树\7. 根据有序链表构造平衡的二叉查找树.cpp" />
+    <ClCompile Include="树\二叉搜索树\8. 在二叉查找树中寻找两个节点，使它们的和为一个给定值.cpp" />
+    <ClCompile Include="树\二叉搜索树\9. 二叉搜索树的最小绝对差.cpp" />
+    <ClCompile Include="树\二叉树的序列化与反序列化.cpp" />
+    <ClCompile Include="树\二叉树的最近公共祖先-迭代法.cpp" />
+    <ClCompile Include="树\二叉树的最近公共祖先-递归法.cpp" />
+    <ClCompile Include="树\递归\1. 二叉树的最大深度.cpp" />
+    <ClCompile Include="树\递归\10.最小路径.cpp" />
+    <ClCompile Include="树\递归\11.统计左叶子节点的和.cpp" />
+    <ClCompile Include="树\递归\12.相同节点值的最大路径.cpp" />
+    <ClCompile Include="树\递归\13.二叉树打家劫舍.cpp" />
+    <ClCompile Include="树\递归\14.找出二叉树中第二小的节点.cpp" />
+    <ClCompile Include="树\递归\2. 平衡二叉树.cpp" />
+    <ClCompile Include="树\递归\3. 二叉树的直径.cpp" />
+    <ClCompile Include="树\递归\4. 翻转二叉树.cpp" />
+    <ClCompile Include="树\递归\5.合并两棵树.cpp" />
+    <ClCompile Include="树\递归\6. 路径总和.cpp" />
+    <ClCompile Include="树\递归\7.统计路径和等于一个数的路径数量.cpp" />
+    <ClCompile Include="树\递归\8. 另一个树的子树.cpp" />
+    <ClCompile Include="树\递归\9. 对称二叉树.cpp" />
+    <ClCompile Include="树\遍历\层次遍历.二叉树左下角的值.cpp" />
+    <ClCompile Include="树\遍历\层次遍历.二叉树每一层的平均值.cpp" />
+    <ClCompile Include="树\遍历\非递归中序遍历.cpp" />
+    <ClCompile Include="树\遍历\非递归前序遍历.cpp" />
+    <ClCompile Include="树\遍历\非递归后序遍历.cpp" />
     <ClCompile Include="滑动窗口问题\3.无重复字符的最长子串.cpp" />
     <ClCompile Include="滑动窗口问题\438. 找到字符串中所有字母异位词.cpp" />
     <ClCompile Include="滑动窗口问题\567.字符串的排列.cpp" />
     <ClCompile Include="滑动窗口问题\76. 最小覆盖子串.cpp" />
     <ClCompile Include="滑动窗口问题\992. K 个不同整数的子数组.cpp" />
     <ClCompile Include="滑动窗口问题\sliding_window_template.c" />
+    <ClCompile Include="链表\237.删除链表中的节点.cpp" />
+    <ClCompile Include="链表\m18.删除链表中的节点(给的是节点值).cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="树\遍历\树的遍历.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -4,23 +4,41 @@
     <Filter Include="滑动窗口问题">
       <UniqueIdentifier>{545b3251-8643-4cfb-a2e4-ad93d2fcea40}</UniqueIdentifier>
     </Filter>
-    <Filter Include="搜索问题">
-      <UniqueIdentifier>{4f75fd83-d763-4309-9632-99f092e3da1f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="并查集">
       <UniqueIdentifier>{952accc8-9248-4228-b375-9d4197660074}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="搜索问题\回溯问题">
-      <UniqueIdentifier>{07184db8-171c-4208-8619-d5d0b41b114b}</UniqueIdentifier>
     </Filter>
     <Filter Include="字典树">
       <UniqueIdentifier>{87d8dfe5-7542-49ec-ad67-625e3c5df6d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="树">
+    <Filter Include="1.链表">
+      <UniqueIdentifier>{cd723b4b-0ff8-4c1d-a7d9-90d5b1d6cb23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.树">
       <UniqueIdentifier>{d692c220-8970-4249-a7f6-ac68ddcb8e71}</UniqueIdentifier>
     </Filter>
-    <Filter Include="树\递归">
+    <Filter Include="2.树\递归">
       <UniqueIdentifier>{fc4cbfaa-0c3c-44c8-ab6e-f61f179639f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.树\遍历">
+      <UniqueIdentifier>{8de0cf1d-2b58-43ec-ae72-ba5ea9d5519d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.树\二叉搜索树">
+      <UniqueIdentifier>{39470473-5753-4f4c-99ac-6e734dda1f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.图">
+      <UniqueIdentifier>{42b4a9c2-256c-4e5f-a0ea-f2119f8e6c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4.搜索问题">
+      <UniqueIdentifier>{4f75fd83-d763-4309-9632-99f092e3da1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4.搜索问题\回溯问题">
+      <UniqueIdentifier>{07184db8-171c-4208-8619-d5d0b41b114b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6.贪心">
+      <UniqueIdentifier>{2031694a-fa4c-4bd4-b163-178f91549b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5.动态规划">
+      <UniqueIdentifier>{0fcbb175-3f2a-42fc-8feb-c3c495ddb984}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,28 +61,28 @@
       <Filter>滑动窗口问题</Filter>
     </ClCompile>
     <ClCompile Include="搜索问题\DFSTemplate.cpp">
-      <Filter>搜索问题</Filter>
+      <Filter>4.搜索问题</Filter>
     </ClCompile>
     <ClCompile Include="搜索问题\BFSTemplate.cpp">
-      <Filter>搜索问题</Filter>
+      <Filter>4.搜索问题</Filter>
     </ClCompile>
     <ClCompile Include="搜索问题\695. 岛屿的最大面积.cpp">
-      <Filter>搜索问题</Filter>
+      <Filter>4.搜索问题</Filter>
     </ClCompile>
     <ClCompile Include="搜索问题\200.岛屿数量.cpp">
-      <Filter>搜索问题</Filter>
+      <Filter>4.搜索问题</Filter>
     </ClCompile>
     <ClCompile Include="并查集\547.朋友圈.cpp">
       <Filter>并查集</Filter>
     </ClCompile>
     <ClCompile Include="并查集\130. 被围绕的区域.cpp">
-      <Filter>搜索问题</Filter>
+      <Filter>4.搜索问题</Filter>
     </ClCompile>
     <ClCompile Include="搜索问题\417. 太平洋大西洋水流问题.cpp">
-      <Filter>搜索问题</Filter>
+      <Filter>4.搜索问题</Filter>
     </ClCompile>
     <ClCompile Include="搜索问题\回溯问题\BacktrackingTemplate.cpp">
-      <Filter>搜索问题\回溯问题</Filter>
+      <Filter>4.搜索问题\回溯问题</Filter>
     </ClCompile>
     <ClCompile Include="字典树\trieTemplate.cpp">
       <Filter>字典树</Filter>
@@ -75,8 +93,112 @@
     <ClCompile Include="字典树\212. 单词搜索 II.cpp">
       <Filter>字典树</Filter>
     </ClCompile>
-    <ClCompile Include="树\递归\104. 二叉树的最大深度.cpp">
-      <Filter>树\递归</Filter>
+    <ClCompile Include="树\遍历\非递归前序遍历.cpp">
+      <Filter>2.树\遍历</Filter>
     </ClCompile>
+    <ClCompile Include="树\遍历\非递归中序遍历.cpp">
+      <Filter>2.树\遍历</Filter>
+    </ClCompile>
+    <ClCompile Include="树\遍历\非递归后序遍历.cpp">
+      <Filter>2.树\遍历</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉树的序列化与反序列化.cpp">
+      <Filter>2.树</Filter>
+    </ClCompile>
+    <ClCompile Include="链表\237.删除链表中的节点.cpp">
+      <Filter>1.链表</Filter>
+    </ClCompile>
+    <ClCompile Include="链表\m18.删除链表中的节点(给的是节点值).cpp">
+      <Filter>1.链表</Filter>
+    </ClCompile>
+    <ClCompile Include="82.删除排序链表中的重复元素(只返回不重复的).cpp">
+      <Filter>1.链表</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\1. 二叉树的最大深度.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\2. 平衡二叉树.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\3. 二叉树的直径.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\4. 翻转二叉树.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\5.合并两棵树.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\6. 路径总和.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\7.统计路径和等于一个数的路径数量.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\8. 另一个树的子树.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\9. 对称二叉树.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\10.最小路径.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\11.统计左叶子节点的和.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\12.相同节点值的最大路径.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\13.二叉树打家劫舍.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\递归\14.找出二叉树中第二小的节点.cpp">
+      <Filter>2.树\递归</Filter>
+    </ClCompile>
+    <ClCompile Include="树\遍历\层次遍历.二叉树每一层的平均值.cpp">
+      <Filter>2.树\遍历</Filter>
+    </ClCompile>
+    <ClCompile Include="树\遍历\层次遍历.二叉树左下角的值.cpp">
+      <Filter>2.树\遍历</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\1.修剪二叉树-hard.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\2. 寻找二叉查找树的第 k 个元素.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\3. 把二叉查找树每个节点的值都加上比它大的节点的值.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\4.二叉查找树的最近公共祖先.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉树的最近公共祖先-递归法.cpp">
+      <Filter>2.树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉树的最近公共祖先-迭代法.cpp">
+      <Filter>2.树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\6.从有序数组中构造二叉查找树.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\7. 根据有序链表构造平衡的二叉查找树.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\8. 在二叉查找树中寻找两个节点，使它们的和为一个给定值.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\9. 二叉搜索树的最小绝对差.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+    <ClCompile Include="树\二叉搜索树\10. 二叉搜索树中的众数.cpp">
+      <Filter>2.树\二叉搜索树</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="树\遍历\树的遍历.md">
+      <Filter>2.树\遍历</Filter>
+    </None>
   </ItemGroup>
 </Project>
