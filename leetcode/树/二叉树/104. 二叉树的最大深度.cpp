@@ -56,27 +56,28 @@ public:
 	}
 };
 
-//深度优先搜索迭代版本 中序遍历
-class Solution1 {
+/*
+class Solution {
 public:
 	int maxDepth(TreeNode* root) {
-		if (root == nullptr)
+		if (!root)
 			return 0;
-		int maxDepth = 0;
 		int depth = 0;
-		TreeNode*p = root;
 		stack<pair<TreeNode*, int>>s1;
+		s1.push(pair<TreeNode*, int>{root, depth});
+		TreeNode* p = root;
+		int maxDepth = 0;
 		while (!s1.empty() || p != nullptr) {
 			while (p != nullptr) {
-				s1.push(pair<TreeNode*, int>(p, ++depth));
+				s1.push(pair<TreeNode*, int>{p, ++depth});
 				p = p->left;
 			}
 			p = s1.top().first;
-			depth = s1.top().second;
-			if (depth > maxDepth) maxDepth = depth;
+			depth = s1.top().second; //深度 在取出头部节点时，深度会修改为当前顶部节点的值
 			s1.pop();
+			maxDepth = max(depth, maxDepth);
 			p = p->right;
 		}
 		return maxDepth;
 	}
-};
+};*/

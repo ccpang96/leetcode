@@ -28,30 +28,26 @@ using namespace std;
 /*@补充说明：你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
 /************************************************************************/
  
-int lengthOfLongestSubstring(string s) {
-	//输入参数有效性判断
-	if (s.size() <= 0)
-		return 0;
+class Solution {
+public:
+	int lengthOfLongestSubstring(string s) {
+		if (s.empty())
+			return 0;
 
-	//申请一个散列表，用于存储窗口中元素的个数，本题是关于字符串的种类问题，所以开辟一个大小为256的数组
-	int hash[256] = { 0 };
+		int hash[256] = { 0 };  //注意此处一定要初始化
 
-	int l = 0; //表示左指针
-	int count = 0; //记录右指针指向字符出现的次数
-	int result = 1; //最终的结果
+		int ans = 0;
+		int l = 0;
+		for (int r = 0; r < s.size(); r++) {
+			hash[s[r]]++;
 
-	for (int r = 0; r < s.size(); r++) {
-		//更新元素在hash表中出现的数量
-		hash[s[r]]++;
-
-		
-		//如果条件不满足，则移动左指针直到条件满足
-		while (hash[s[r]] != 1) { //  [5/18/2020 Administrator]
-			hash[s[l]]--;
-			l++;
+			//滑动左侧窗口
+			while (hash[s[r]] > 1) {
+				hash[s[l]]--;
+				l++;
+			}
+			ans = max(ans, r - l + 1);
 		}
-		//更新结果
-		result = max(result, r - l + 1);
+		return ans;
 	}
-	return result;
-}
+};

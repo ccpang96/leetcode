@@ -8,7 +8,15 @@
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
+#include<unordered_map>
+#include<string>
+#include<sstream>
+#include<queue>
+#include<stack>
 using namespace std;
+
+ 
 
 
 
@@ -38,7 +46,7 @@ using namespace std;
 /*@time:      2020/5/18 17:45
 /*@author:    ccpang
 /************************************************************************/
-string minWindow(string s, string t) {
+string minWindow(string &s, string &t) {
 
 	//输入参数有效性判断
 	if (t.size() <= 0 || s.size() <= 0 || s.size() < t.size())
@@ -74,5 +82,16 @@ string minWindow(string s, string t) {
 	return result;
 }
 
+//
+//int main() {
+//
+//	string s1, s2;
+//	while (getline(cin,s1)) {
+//		getline(cin, s2);
+//		string result = minWindow(s1, s2);
+//	}
+//	system("pause");
+//	return 0;
+//}
 
  

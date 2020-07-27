@@ -8,9 +8,7 @@
 
 /************************************************************************/
 /*@ Problem Name         : 543. 二叉树的直径
-/*@ Description 		 :给定一个二叉树，判断它是否是高度平衡的二叉树。
-本题中，一棵高度平衡二叉树定义为：
-一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过1。
+/*@ Description 		 :
 *************************************************************************
 /*@ Example1-Input	 	 :
 /*@ Example1-Output		 :
@@ -32,6 +30,7 @@
 #include<stack>
 using namespace std;
 
+
  
 struct TreeNode {
 	int val;
@@ -43,22 +42,21 @@ struct TreeNode {
 
 class Solution {
 public:
-	int ans = 0;
+	int maxLength = 1;
 
 	int diameterOfBinaryTree(TreeNode* root) {
-		if (!root)
-			return 0;
-
-		int maxD = maxDepth(root);
-		return ans - 1;
+		maxDepth(root);
+		return maxLength - 1; //边的数量= 节点数量-1
 	}
 
-	int maxDepth(TreeNode *root) {
+	int maxDepth(TreeNode* root) {
 		if (!root)
 			return 0;
-		int left = maxDepth(root->left);	//左子树的最大深度
-		int right = maxDepth(root->right);	//右子树的最大深度
-		ans = max(ans, left + right + 1);	//最大节点个数：L+R+1
+		int left = maxDepth(root->left);
+		int right = maxDepth(root->right);
+		maxLength = max(maxLength, left + right + 1);
 		return 1 + max(left, right);
 	}
+ 
+	
 };

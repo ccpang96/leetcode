@@ -3,7 +3,7 @@
 /*@Created Date      : 2020/5/31 10:21
 /*@Author            : ccpang(ccpang96@163.com)
 /*@blog              : www.cnblogs.com/ccpang
-/*@Description       :
+/*@Description       :  判断一颗树是否为平衡二叉树
 /************************************************************************/
 
 #include<iostream>
@@ -37,7 +37,8 @@ public:
 			return 0;
 		int left = maxDepth(root->left);
 		int right = maxDepth(root->right);
-		if (abs(left - right) > 1) result = false;
+		if (abs(left - right) > 1) 
+			result = false;
 		return 1 + max(left, right);
 	}
 private:

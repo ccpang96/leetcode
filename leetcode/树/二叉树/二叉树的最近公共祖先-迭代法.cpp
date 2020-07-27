@@ -26,6 +26,8 @@ struct TreeNode {
 };
 
 
+
+//迭代方法：先分别找到一个由根节点通往节点1和节点2的路径，分别存放在list1和list2中，然后再从后往前遍历list1和list2找到相等的值。
 class Solution {
 public:
 
@@ -64,5 +66,25 @@ public:
 			}
 		}
 		return node;
+	}
+};
+
+//递归方法：分别在左右子树中查找节点p和节点q，如果root=p或者root =q或者root =nullptr就返回，则判断如果left
+
+class Solution1 {
+public:
+	TreeNode * lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+		//走到这一步，说明p或者q被找到，则返回p或者q，否则返回nullptr
+		if (!root || root == p || root == q) {
+			return root;
+		}
+
+		TreeNode* left = lowestCommonAncestor(root->left, p, q);
+		TreeNode* right = lowestCommonAncestor(root->right, p, q);
+		if (!left && !right)	return nullptr;  //左右子树都没找到p和q就返回nullptr
+		if (!right && left)	return left;	//右子树没找到，说明左子树就是公共节点
+		if (!left && right)	return right;   //左子树没找到，说明右子树就是公共节点
+
+		return root;   //说明根节点就是公共节点
 	}
 };

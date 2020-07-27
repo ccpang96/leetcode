@@ -37,7 +37,7 @@ public:
 			TreeNode*node = stack1.top();
 			stack1.pop();
 			if (node != nullptr) {
-				stack1.push(node);		//先push节点，再pushnullptr，这样在出栈的时候，nullptr先出栈
+				stack1.push(node);		//先push节点，再push nullptr，这样在出栈的时候，nullptr先出栈
 				stack1.push(nullptr);
 				if (node->right)
 					stack1.push(node->right);
