@@ -77,7 +77,7 @@ int main() {
 	for (int i = 2; i <= n; i++) {
 	
 		for (int j = 1; j <= i; j++) {
-			f[i][j] = max(f[i - 1][j - 1] + a[i][j], f[i - 1][j] + a[i][j]);
+			f[i][j] = max(f[i - 1][j - 1] + a[i][j], f[i - 1][j] + a[i][j]);  //从左上角或者右上角转移过来
 		}
 	}
 
@@ -99,6 +99,7 @@ int main() {
 
 
 //也可以自底向下的DP
+/*
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -143,3 +144,4 @@ int main() {
 	system("pause");
 	return 0;
 }
+*/

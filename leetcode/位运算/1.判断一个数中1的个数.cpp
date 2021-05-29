@@ -10,8 +10,4 @@ void  func(int i) {
 	cout << count << endl;
 }
 
-//int main() {
-//	func(5);
-//	system("pause");
-//	return 0;
-//}
+ 

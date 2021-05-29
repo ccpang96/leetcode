@@ -3,24 +3,9 @@
 /*@Created Date      : 2020/6/1 8:42
 /*@Author            : ccpang(ccpang96@163.com)
 /*@blog              : www.cnblogs.com/ccpang
-/*@Description       : 
-/************************************************************************/
-
-/************************************************************************/
-/*@ Problem Name         : 572. 另一个树的子树
-/*@ Description 		 :
-
-
-*************************************************************************
-/*@ Example1-Input	 	 :
-/*@ Example1-Output		 :
-/*@ Example1-Explanation :
-*************************************************************************
-/*@ Example1-Input	 	 :
-/*@ Example1-Output		 :
-/*@ Example1-Explanation :
-
-/*@补充说明：
+/*@Description       : 首先使用递归的思路，分别判断(s,t)、(s->right,t)、(s->left,t).然后调用函数判断两个树是否相等.
+//对于s上的每个点都要和t进行匹配，而匹配一次的代价是O(t)，所以渐近时间复杂度是O(s*t);
+//空间复杂度是：max(ds,dt); //其中ds是树s的深度，dt是树t的深度
 /************************************************************************/
 #include<iostream>
 #include<vector>
@@ -42,8 +27,10 @@ struct TreeNode {
 class Solution {
 public:
 	bool isSubTree(TreeNode* s, TreeNode *t) {
-		if (t == nullptr) return true;
-		if (s == nullptr) return false;
+		if (t == nullptr) 
+			return true;   //空树是任意树的子树
+		if (s == nullptr)
+			return false;  //s是空树的话，就直接返回false
 		return isSubTree(s->left, t) || isSubTree(s->right, t) || isSubTreeWithRoot(s, t);
 	}
 	bool isSubTreeWithRoot(TreeNode *s, TreeNode* t) {
@@ -58,63 +45,3 @@ public:
 
  
 
-//void trimLeftTrailingSpaces(string &input) {
-//    input.erase(input.begin(), find_if(input.begin(), input.end(), [](int ch) {
-//        return !isspace(ch);
-//    }));
-//}
-//
-//void trimRightTrailingSpaces(string &input) {
-//    input.erase(find_if(input.rbegin(), input.rend(), [](int ch) {
-//        return !isspace(ch);
-//    }).base(), input.end());
-//}
-
-//将输入的一行数构建为二叉树
-//TreeNode* stringToTreeNode(string input) {
-//	trimLeftTrailingSpaces(input);
-//	trimRightTrailingSpaces(input);
-//	input = input.substr(1, input.length() - 2);
-//	if (!input.size()) {
-//		return nullptr;
-//	}
-//
-//	string item;
-//	stringstream ss;
-//	ss.str(input);
-//
-//	getline(ss, item, ',');
-//	TreeNode* root = new TreeNode(stoi(item));
-//	queue<TreeNode*> nodeQueue;
-//	nodeQueue.push(root);
-//
-//	while (true) {
-//		TreeNode* node = nodeQueue.front();
-//		nodeQueue.pop();
-//
-//		if (!getline(ss, item, ',')) {
-//			break;
-//		}
-//
-//		trimLeftTrailingSpaces(item);
-//		if (item != "null") {
-//			int leftNumber = stoi(item);
-//			node->left = new TreeNode(leftNumber);
-//			nodeQueue.push(node->left);
-//		}
-//
-//		if (!getline(ss, item, ',')) {
-//			break;
-//		}
-//
-//		trimLeftTrailingSpaces(item);
-//		if (item != "null") {
-//			int rightNumber = stoi(item);
-//			node->right = new TreeNode(rightNumber);
-//			nodeQueue.push(node->right);
-//		}
-//	}
-//	return root;
-//}
-
- 

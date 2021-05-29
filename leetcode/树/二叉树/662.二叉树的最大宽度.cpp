@@ -1,12 +1,7 @@
-/************************************************************************/
-/*@File Name         : 662.二叉树的最大宽度.cpp
-/*@Created Date      : 2020/7/5 8:34
-/*@Author            : ccpang(ccpang96@163.com)
-/*@blog              : www.cnblogs.com/ccpang
-/*@Description       :
-/************************************************************************/
-
-
+/*
+	给定一个二叉树，获取二叉树的宽度.
+	树的宽度是所有层的最大宽度，这个二叉树与满二叉树结构相同，但是有一些节点为空.
+*/
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -30,12 +25,12 @@ public:
 	int widthOfBinaryTree(TreeNode* root) {
 		if (!root)
 			return 0;
-		queue<pair<TreeNode*, int>>q;
+		queue<pair<TreeNode*, unsigned long long >>q;
 		q.push({ root,1 });
 		int ans = 0;
 		while (!q.empty()) {
 			int sz = q.size();
-			ans = max(q.back().second - q.front().second + 1, ans);
+			ans = max(int(q.back().second - q.front().second + 1), ans);
 
 			for (int i = 0; i < sz; i++) {
 				unsigned long long pos = q.front().second;
@@ -48,3 +43,4 @@ public:
 		return ans;
 	}
 };
+ 

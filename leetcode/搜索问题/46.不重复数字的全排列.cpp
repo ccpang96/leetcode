@@ -1,70 +1,64 @@
-/************************************************************************/
-/*@File Name         : 46.不重复数字的全排列.cpp
-/*@Created Date      : 2020/7/4 7:45
-/*@Author            : ccpang(ccpang96@163.com)
-/*@blog              : www.cnblogs.com/ccpang
-/*@Description       : 
-/************************************************************************/
-
-
-/* Includes *************************************************************/
-#include<iostream>
 #include<vector>
-#include<algorithm>
-#include<unordered_map>
-#include<string>
-#include<sstream>
-#include<queue>
-#include<stack>
-
-#include<unordered_set>
+#include<iostream>
 using namespace std;
 
 
-//决策树的遍历过程
+//不重复数字的全排列
+/*
+
+输入: [1,2,3]
+输出:
+[
+[1,2,3],
+[1,3,2],
+[2,1,3],
+[2,3,1],
+[3,1,2],
+[3,2,1]
+]
+*/
+
 class Solution {
 public:
-	vector<vector<int>> permute(vector<int>& nums) {
-		vector<vector<int>>result;
-		if (nums.empty())
-			return result;
-		vector<int>track;
-		unordered_set<int>set1;
-		backtrack(result, set1, track, nums);
-		return result;
-	}
+	vector<vector<int>> ans;
+	vector<int> temp;
+	void DFS(int index, vector<int>&nums, vector<bool>&st) {
 
-	void backtrack(vector<vector<int>>&result, unordered_set<int>&set1, vector<int>& track, vector<int>& nums) {
+		if (index == nums.size()) {
+			ans.push_back(temp);
 
-		if (track.size() == nums.size()) {
-			result.push_back(track);
 			return;
 		}
+		for (int i = 0; i < nums.size(); i++)
+		{
+			if (!st[i]) {
+				temp.push_back(nums[i]);
+				st[i] = true; //st[i]已经被访问
+				DFS(index + 1, nums, st);
+				st[i] = false; //设置成未访问
+				temp.pop_back(); //回溯
+			}
 
-		for (int i = 0; i < nums.size(); i++) {
-
-
-			if (set1.find(nums[i]) != set1.end()) //该元素已经访问过，直接退出循环
-				continue;
-
-			track.push_back(nums[i]);
-			set1.insert(nums[i]);
-
-			backtrack(result, set1, track, nums);
-
-			track.pop_back();
-			set1.erase(nums[i]);
 		}
+	}
+	vector<vector<int>> permute(vector<int>& nums) {
+		if (nums.empty())
+			return {};
+		vector<bool>st(nums.size(), false);
+		DFS(0, nums, st);
+		return ans;
 	}
 };
 
-
-
-//int main() {
-//
-//	vector<int> nums = { 1,2,3 };
-//	vector<vector<int>>result = Solution().permute(nums);
-//	system("pause");
-//	return 0;
-//}
-//
+/*
+int main() {
+	vector<int> nums{ 1, 2, 3 };
+	vector<vector<int>> res = Solution().permute(nums);
+	for (auto &m : res) {
+		for (auto &n : m)
+			cout << n << "  ";
+		cout << endl;
+	}
+	system("pause");
+	return 0;
+}*/
